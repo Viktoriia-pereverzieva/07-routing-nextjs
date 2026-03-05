@@ -1,108 +1,52 @@
-.list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
+.menuList {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-.listItem {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 180px;
+.menuItem {
+    margin-bottom: 16px;
 }
 
-.title {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 8px 0;
-    color: #212529;
+.menuLink {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
-.content {
-    margin: 0;
-    flex-grow: 1;
-    font-size: 14px;
-    color: #495057;
-    margin-bottom: 12px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+.menuLink:hover {
+    background-color: #444;
+    color: #ddd; }
 
-.button {
-    align-self: flex-end;
-    padding: 6px 12px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #dc3545;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.button:hover {
-    background-color: #bb2d3b;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-}
-
-.tag {
-    display: inline-block;
-    padding: 4px 8px;
-    font-size: 12px;
-    color: #0d6efd;
-    background-color: #e7f1ff;
-    border: 1px solid #b6d4fe;
-    border-radius: 12px;
-    max-width: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.detailsButton {
-    background-color: #585681;
-    /* фиолетовый оттенок */
-    color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.detailsButton:hover {
-    background-color: #b1abf1;
-    /* темнее при наведении */
-}
-
-.button {
-    background-color: #ef4444;
-    /* красная кнопка для удаления */
-    color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.button:hover {
-    background-color: #b91c1c;
-    /* темнее при наведении */ }
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    
+        .listItem {
+            background-color: #3a3b3d;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+        }
+    
+        .listItem:hover {
+            background-color: #6a6f7c;
+            transform: translateY(-2px);
+        }
+    
+        .title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #f1f1f1;
+            
+        }
