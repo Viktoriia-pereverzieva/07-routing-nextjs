@@ -1,0 +1,33 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f9fafb, #eef2ff);
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    background: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 16px 0;
+    color: #111827;
+}
+
+.description {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}

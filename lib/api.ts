@@ -15,12 +15,13 @@ const api = axios.create({
   },
 });
 
-export async function fetchNotes(page: number = 1, search: string = "", perPage: number = 10): Promise<NotesResponse> {
+export async function fetchNotes(page: number = 1, search: string = "", perPage: number = 10, tag?: string): Promise<NotesResponse> {
   const { data } = await api.get<NotesResponse>("/notes", {
     params: {
       page,
       perPage,
       ...(search && { search }),
+      ...(tag && { tag }),
     },
   });
   
@@ -37,7 +38,8 @@ export async function deleteNote(id: string): Promise <Note> {
   return data;
 }
 
-export default async function fetchNoteById(id: string): Promise <Note> {
+export default async function fetchNoteById(id: string): Promise<Note> {
   const { data } = await api.get<Note>(`/notes/${id}`);
   return data;
 }
+
