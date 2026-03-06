@@ -18,9 +18,7 @@ import {
 } from "@/components/Error/Error";
 import { useMemo } from "react";
 
-
 export default function NotesClient() {
-    
     
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);

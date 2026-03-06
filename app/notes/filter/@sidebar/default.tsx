@@ -14,20 +14,16 @@ export default async function SidebarNotes() {
           </Link>
         </li>
 
-        {tags.map(
-          (
-            tag: string 
-          ) => (
-            <li key={tag} className={css.menuItem}>
-              <Link
-                href={`/notes/filter/${tag}`}
-                className={css.menuLink}
-              >
-                {tag}
-              </Link>
-            </li>
-          )
-        )}
+        {tags.map((tag: string) => (
+          <li key={tag} className={css.menuItem}>
+            <Link
+              href={`/notes/filter/${tag}`}
+              className={css.menuLink}
+            >
+              {tag}
+            </Link>
+          </li>
+        ))}
       </ul>
     </aside>
   );
